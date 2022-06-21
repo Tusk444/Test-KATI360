@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
+body{
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: #f5f3f3;
+}
+
+.primaryColor{
+    color: #4BC313;
+}
+
+.secondaryColor{
+    color: #7E899D
+    ;
+}
+
+.round{
+    border-radius: 12px;
+}
+
+.roundPlus{
+    border-radius: 20px;
+}
+
+.podcast{
+    height: 10em;
+    opacity: 0.88;
+}
+
+.logo{
+    height: 30px;
+    width: 80px;
+}
+
+.profiles{
+    height: 80px;
+    width: 80px;
+}
+
+.action{
+    background-color:#7E899D ;
+}
+
+.selected{
+    border-color: #4BC313;
+}
+
+.mouse{
+    cursor: pointer;
+}
