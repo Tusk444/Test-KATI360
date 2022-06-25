@@ -5,18 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil</title>
-    <link rel="stylesheet" href="../styles/bootstrap.css">    
-    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="styles/bootstrap.css">    
+    <link rel="stylesheet" href="styles/index.css">
     <script src="https://kit.fontawesome.com/b841f6948a.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="container mb-3">
+        <!-- Sidebar -->
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <p class=" ml-1">KATI360 - AudioLabs <br> <strong>version 2.0.0</strong></p>
+          </div>
 
         <!-- Navigation -->
-        <div class="row mt-1">
+        <div class="row mt-1 main">
 
             <div class="col-8 mt-5">
-                <i class="fa fa-solid fa-bars fa-2x primaryColor"></i>
+                <i onclick="openNav()" class="fa fa-solid fa-bars fa-2x primaryColor"></i>
             </div>
 
             <div class="col mt-5">
@@ -28,7 +33,7 @@
             </div>
 
             <div class="col">
-                <img src="../assets/avatar.jpg" alt="Avatar" class="rounded-circle shadow profiles">
+                <img src="assets/avatar.jpg" alt="Avatar" class="rounded-circle shadow profiles">
             </div>
         </div>
 
@@ -61,7 +66,7 @@
         <div class="row mt-3">
            <div class="col-3">
             <div class="card align-items-center roundPlus">
-                <img src="../assets/handshake.png" class="img-fluid h-25 w-25 pt-3" alt="">
+                <img src="assets/handshake.png" class="img-fluid h-25 w-25 pt-3" alt="">
                 <div class="card-body">
                     <h5 class="card-title">Courtage</h5>
                 </div>
@@ -70,7 +75,7 @@
 
            <div class="col-3 offset-1">
             <div class="card align-items-center roundPlus">
-                <img src="../assets/fast-delivery.png" class="img-fluid h-25 w-25 pt-3" alt="">
+                <img src="assets/fast-delivery.png" class="img-fluid h-25 w-25 pt-3" alt="">
                 <div class="card-body">
                     <h5 class="card-title">Livreur</h5>
                 </div>
@@ -79,7 +84,7 @@
 
            <div class="col-3 offset-1">
             <div class="card align-items-center roundPlus">
-                <img src="../assets/real-estate.png" class="img-fluid h-25 w-25 pt-3" alt="">
+                <img src="assets/real-estate.png" class="img-fluid h-25 w-25 pt-3" alt="">
                 <div class="card-body">
                     <h5 class="card-title">Immobilier</h5>
                 </div>
@@ -107,7 +112,7 @@
         <div class="row mt-3">
             <div class="col-2">
              <div class="card align-items-center roundPlus">
-                 <img src="../assets/agriculture.jpg" class="card-img roundPlus podcast" alt="">
+                 <img src="assets/agriculture.jpg" class="card-img roundPlus podcast" alt="">
                  <div class="card-img-overlay d-flex align-items-end">
                     <h5 class="card-footer mx-auto text-center text-white fw-bold">Agriculture</h5>
                 </div>
@@ -116,7 +121,7 @@
  
             <div class="col-2 offset-1">
              <div class="card align-items-center roundPlus">
-                 <img src="../assets/education.jpg" class="card-img roundPlus podcast" alt="">
+                 <img src="assets/education.jpg" class="card-img roundPlus podcast" alt="">
                  <div class="card-img-overlay d-flex align-items-end">
                     <h5 class="card-footer mx-auto text-center text-white fw-bold">Education</h5>
                 </div>
@@ -125,7 +130,7 @@
  
             <div class="col-2 offset-1">
              <div class="card align-items-center roundPlus">
-                 <img src="../assets/histoire.jpg" class="card-img roundPlus podcast" alt="">
+                 <img src="assets/histoire.jpg" class="card-img roundPlus podcast" alt="">
                  <div class="card-img-overlay d-flex align-items-end">
                     <h5 class="card-footer mx-auto text-center text-white fw-bold">Histoire</h5>
                 </div>
@@ -134,7 +139,7 @@
 
             <div class="col-2 offset-1">
                 <div class="card roundPlus">
-                    <img src="../assets/culture.jpg" class="card-img roundPlus podcast" alt="">
+                    <img src="assets/culture.jpg" class="card-img roundPlus podcast" alt="">
                     <div class="card-img-overlay d-flex align-items-end">
                         <h5 class="card-footer mx-auto text-center text-white fw-bold">Culture</h5>
                     </div>
@@ -147,7 +152,7 @@
 
         <div class="row mt-5">
             <div class="col-1 roundPlus">
-                <img src="../assets/culture.jpg" class="img-fluid h-50 roundPlus" alt="">
+                <img src="assets/culture.jpg" class="img-fluid h-50 roundPlus" alt="">
             </div>
 
             <div class="col-1 mt-2 px-0">
@@ -168,12 +173,12 @@
         </div>
         <div class="row mt-3">
                 <div class="col-4 offset-1 px-0 card round border-0">
-                    <img class="card-img-top round d-block" src="../assets/culture.jpg" alt="">
+                    <img class="card-img-top round d-block" src="assets/culture.jpg" alt="">
                     <div class="card-body">
                         <h5 class="card-title secondaryColor fw-bolder">Tissu Wax</h5>
                         <p class="card-text secondaryColor">Code de famille</p>
                         <div class="d-flex">
-                            <img src="../assets/offre1.jpg" class="img-fluid h-50 rounded-circle profiles" alt="">
+                            <img src="assets/offre1.jpg" class="img-fluid h-50 rounded-circle profiles" alt="">
                             <p class="card-text px-3 mt-4">M. Aminata Fall</p>
                         </div>
                         <div class="d-flex mt-1">
@@ -191,12 +196,12 @@
                 </div>
     
                 <div class="col-4 offset-1 px-0 card round border-0">
-                    <img class="card-img-top round d-block" src="../assets/mosquee.jpg" alt="">
+                    <img class="card-img-top round d-block" src="assets/mosquee.jpg" alt="">
                     <div class="card-body">
                         <h5 class="card-title secondaryColor fw-bolder">Magal</h5>
                         <p class="card-text secondaryColor">Culture Sénégalaise</p>
                         <div class="d-flex">
-                            <img src="../assets/offre2.jpg" class="img-fluid h-50 rounded-circle profiles" alt="">
+                            <img src="assets/offre2.jpg" class="img-fluid h-50 rounded-circle profiles" alt="">
                             <p class="card-text px-3 mt-4">M. Mariam Diop</p>
                         </div>
                         <div class="d-flex mt-1">
@@ -218,7 +223,7 @@
 
         <div class="row mt-5">
             <div class="col-1 round">
-                <img src="../assets/agriculture.jpg" class="img-fluid h-75 w-50 roundPlus" alt="">
+                <img src="assets/agriculture.jpg" class="img-fluid h-75 w-50 roundPlus" alt="">
             </div>
 
             <div class="col-1 mt-1 px-0">
@@ -242,7 +247,8 @@
         </div>
 
     </div>
-   
+
+   <script src="scripts/index.js"></script>
     
 </body>
 </html>
